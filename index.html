@@ -12,7 +12,7 @@
   <!-- build:css -->
   <link rel="stylesheet" href="/assets/css/main.css">
   
-  <link rel="stylesheet" href="/assets/css/owl/owl.carousel.css">
+  <link rel="stylesheet" href="/assets/css/owl/owl.carousel.min.css">
 
   <!-- endbuild -->
 </head>
@@ -20,33 +20,34 @@
 <body>
   <header>
     <nav id="scrollspy" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand mobile-only" href="#"><img src="assets/img/logo.png" class="logo" alt=""></a>
+        
         <div class="container">
-          <div class="collapse navbar-collapse ml-auto">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="#what-we-do">WHAT WE DO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#compare-the-benefits">COMPARE THE BENEFITS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#our-services">OUR SERVICES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#case-studies">CASE STUDIES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#the-team">THE TEAM</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#say-hello">SAY HELLO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">CONTACT</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" class="logo" alt=""></a>
+            <div class="collapse navbar-collapse ml-auto">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#what-we-do">WHAT WE DO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#compare-the-benefits">COMPARE THE BENEFITS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-services">OUR SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#case-studies">CASE STUDIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#the-team">THE TEAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#say-hello">SAY HELLO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -84,16 +85,10 @@
     
     <main>
         <div class="container">
-            <div class="logo-wrapper">
-                <img src="assets/img/logo.png" alt="" class="logo">
-            </div>
-        </div>
-
-        <div class="container">
             <div class="row">
                 <div class="media col-lg-11">
                         <div class="row">
-                            <div class="container">
+                            <div class="container heading">
                                 <div class="row">
                                 <div class="headding-wrapper col-12 col-lg-6">
                                     <h1>Digital development specialists</h1>
@@ -143,7 +138,7 @@
             </div>
         </div>
 
-        <div class="jumbotron pt-0 pb-0" id="what-we-do">
+        <div class="jumbotron pt-lg-0 pb-0 mb-0" id="what-we-do">
             <div class="container">
                 <div class="row">
                     <div class="media-body col-12 col-lg-6 mb-auto mt-auto">
@@ -209,14 +204,14 @@
                 <div class="col-lg-4">
                     <img src="assets/img/group-2@3x.png" height="110px" alt="Generic placeholder image" >
                     <h4>DEVELOPMENT</h4>
-                    <p>Design and UX / Frontend: HTML / CSS 3 / Javascript / jQuery / Angular.js / Backbone.js / React.js / Kockout.js / SASS/LESS 
+                    <p class="pr-lg-5">Design and UX / Frontend: HTML / CSS 3 / Javascript / jQuery / Angular.js / Backbone.js / React.js / Kockout.js / SASS/LESS 
                     <br />PHP: Drupal / Magento / Symfony / WordPress / Custom PHP
                     <br /> .NET: Site Core</p>
                 </div>
                 <div class="col-lg-3">
                     <img src="assets/img/group@3x.png" height="110px" alt="Generic placeholder image" >
                     <h4>MOBILE APPLICATIONS</h4>
-                    <p>Design and UX / iOS / Android / Windows Mobile / Adobe Phonegap / Unity 3D / Cocos2d-x</p>
+                    <p class="pr-lg-5">Design and UX / iOS / Android / Windows Mobile / Adobe Phonegap / Unity 3D / Cocos2d-x</p>
                     
                 </div>
                 <div class="text-wrapper col-lg-5">
@@ -244,10 +239,12 @@
                 <div class="carousel-item active laptop">
                     <div class="container">
                         <div class="row">
-                            <div class="offset-lg-1 col-lg-4 mt-auto mb-auto text-wrapper">
-                                <h2>Case studies</h2>
-                                <h4>KENNEDYS</h4>
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>KENNEDYS</h2>
                                 <p>Our Developers and Project Managers have years of experience translating functional business requirements into user-centred digital websites and applications. We bring our passion for digital innovation to your projects along with the capabilities and drive to deliver. All at the best possible cost.</p>
+                                <a href="https://www.kennedyslaw.com/" target="_blank">https://www.kennedyslaw.com/</a>
+                            
                             </div>
                             
                             <div class="image-holder col-lg-6">
@@ -266,9 +263,9 @@
                 <div class="carousel-item laptop">
                     <div class="container">
                         <div class="row">
-                            <div class="offset-lg-1 col-lg-4 mt-auto mb-auto text-wrapper">
-                                <h2>Case studies</h2>
-                                <h4>Take IELTS</h4>
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>Take IELTS</h2>
                                 <p>We rebuilt their website, taking them from Drupal 6 to Drupal 8, refreshing the layout and design of the site and focusing on how it was displayed on mobile.</p>
                                 <p>Technology – Drupal 8 CMS</p>
                                 <a href="https://takeielts.britishcouncil.org" target="_blank">https://takeielts.britishcouncil.org</a>
@@ -284,9 +281,9 @@
                 <div class="carousel-item laptop">
                     <div class="container">
                         <div class="row">
-                            <div class="offset-lg-1 col-lg-4 mt-auto mb-auto text-wrapper">
-                                <h2>Case studies</h2>
-                                <h4>Central School of Speech and Drama</h4>
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>Central School of Speech and Drama</h2>
                                 <p>We delivered enhancements to their website based on UX recommendations provided by City Interaction Lab providing an immediate visual impact.</p>
                                 <p>Technology – Drupal 7 CMS</p>
                                 <a href="https://www.cssd.ac.uk" target="_blank">https://www.cssd.ac.uk</a>
@@ -302,9 +299,9 @@
                 <div class="carousel-item laptop">
                     <div class="container">
                         <div class="row">
-                            <div class="offset-lg-1 col-lg-4 mt-auto mb-auto text-wrapper">
-                                <h2>Case studies</h2>
-                                <h4>Sheffield Hallam University</h4>
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>Sheffield Hallam University</h2>
                                 <p>Info missing</p>
                                 <p>Technology – Sitecore</p>
                                 <a href="https://www.shu.ac.uk" target="_blank">https://www.shu.ac.uk</a>
@@ -319,9 +316,9 @@
                 <div class="carousel-item laptop">
                     <div class="container">
                         <div class="row">
-                            <div class="offset-lg-1 col-lg-4 mt-auto mb-auto text-wrapper">
-                                <h2>Case studies</h2>
-                                <h4>The Varkey Foundation </h4>
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>The Varkey Foundation </h2>
                                 <p>The organisation wanted to consolidate their brands and unify the user experience.  We provided them with a digital platform that fulfils the needs of the Varkey Foundation, the Global Teacher Prize and the Global Education and Skills Forum. </p>
                                 <p>Technology – Umbraco</p>
                                 <a href="https://www.varkeyfoundation.org" target="_blank">https://www.varkeyfoundation.org</a>
@@ -336,9 +333,9 @@
                 <div class="carousel-item laptop">
                     <div class="container">
                         <div class="row">
-                            <div class="offset-lg-1 col-lg-4 mt-auto mb-auto text-wrapper">
-                                <h2>Case studies</h2>
-                                <h4>IOSH</h4>
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>IOSH</h2>
                                 <p>We designed, developed and delivered and a brand-new website for IOSH.</p>
                                 <p>Technology – Umbraco</p>
                                 <a href="https://www.iosh.ac.uk" target="_blank">https://www.iosh.ac.uk</a>
@@ -354,9 +351,9 @@
                 <div class="carousel-item laptop">
                     <div class="container">
                         <div class="row">
-                            <div class="offset-lg-1 col-lg-4 mt-auto mb-auto text-wrapper">
-                                <h2>Case studies</h2>
-                                <h4>Lieferheld</h4>
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>Lieferheld</h2>
                                 <p>We provided front-end and back-end development services to Lieferheld. Over the course of our successful partnership, our developers received continual recognition for their dedication and team work.</p>
                                 <p>Technology - HTML5, CSS3, JavaScript, jQuery, Backbone.JS, React.JS, NodeJS, Immutable.JS, ExpressJS, PhoneGap, PostgreSQL, Elastic search, Django, Jenkins</p>
                                 <a href="https://www.lieferheld.ac.uk" target="_blank">https://www.lieferheld.ac.uk</a>
@@ -373,9 +370,9 @@
                 <div class="carousel-item laptop">
                     <div class="container">
                         <div class="row">
-                            <div class="offset-lg-1 col-lg-4 mt-auto mb-auto text-wrapper">
-                                <h2>Case studies</h2>
-                                <h4>Gunvor Group</h4>
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>Gunvor Group</h2>
                                 <p>We have created a unique intranet platform combining the best practices in UI development with easy-to-use tools and means of communication, maximizing users’ experience with the system.</p>
                                 <p>Technology - C#; ASP.NET; Sitecore 8.2 CMS; MVC, GlassMapper, Unicorne</p>
                                 <a href="https://gunvorgroup.com/en/" target="_blank">https://gunvorgroup.com/en/</a>
@@ -391,9 +388,9 @@
                 <div class="carousel-item laptop">
                     <div class="container">
                         <div class="row">
-                            <div class="offset-lg-1 col-lg-4 mt-auto mb-auto text-wrapper">
-                                <h2>Case studies</h2>
-                                <h4>WOLFSBURG</h4>
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>WOLFSBURG</h2>
                                 <p>We delivered HTML, CSS and Javascript framework containing all views and functionalities requested by the client including, but not limited to, single pages, overview pages, navigations, newsletter template and other page views and components. In addition, the product provided complied to WAI-ARIA 1.0 and WAI_WACG AAA</p>
                                 <p>Technology - Bootstrap / jQuery / CSS3 / HTML5</p>
                                 <a href="https://www.wolfsburg.de/" target="_blank">https://www.wolfsburg.de/</a>
@@ -458,29 +455,29 @@
                 <div class="row">
                     <div class="form col-12 col-lg-5 offset-lg-1">
                         <h2>Say hello</h2>
-                            <form>
+                            <form type="post">
                             <div class="form-group">
-                                <label for="fname">First name</label>
-                                <input type="text" class="form-control" id="fname" placeholder="">
+                                <label for="fname">First name*</label>
+                                <input type="text" class="form-control" name="fname" id="fname" placeholder="" required>
                             </div>
                             <div class="form-group">
-                                <label for="lname">Last name</label>
-                                <input type="text" class="form-control" id="lname" placeholder="">
+                                <label for="lname">Last name*</label>
+                                <input type="text" class="form-control" name="lname" id="lname" placeholder="" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="">
+                                <label for="email">Email*</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="" required>
                             </div>
                             <div class="form-group">
-                                <label for="textarea">Message</label>
-                                <textarea class="form-control" id="textarea" rows="1" style="resize: none;"></textarea>
+                                <label for="textarea">Message*</label>
+                                <textarea class="form-control" id="textarea" name="textarea" rows="1" style="resize: none;" required></textarea>
                             </div>
 
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Yes, I have read the privacy policy and I agree to submit my data.<br />
-                                    My data may be collected, stored and processed by D.One, but not disclosed to third parties. The content and scope of my consent are set out in the D.One Code of Practice. I agree that my e-mail address and personal information from D.One will be used to email me about D.One products and services. I can revoke my consent to the collection, storage and processing of my data as well as my consent to receive the information described to D.One at any time.</label>
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" required>
+                                <label class="custom-control-label" for="customCheck1">Yes, I have read the privacy policy and I agree to submit my data.<br /><br />
+                                    My data may be collected, stored and processed by D.one, but not disclosed to third parties. The content and scope of my consent are set out in the D.One Code of Practice. I agree that my e-mail address and personal information from D.One will be used to email me about D.One products and services. I can revoke my consent to the collection, storage and processing of my data as well as my consent to receive the information described to D.One at any time.</label>
                             </div>
                                 
                             <button type="submit" class="btn btn-primary">SUBMIT</button>

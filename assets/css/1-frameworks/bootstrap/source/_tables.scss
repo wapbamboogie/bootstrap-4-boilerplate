@@ -10,7 +10,7 @@
 
   th,
   td {
-    padding: $table-cell-padding;
+    padding: $table-cell-padding ($table-cell-padding * 2);
     vertical-align: top;
     border-top: $table-border-width solid $table-border-color;
   }
@@ -18,7 +18,7 @@
   thead th {
     vertical-align: middle;
     height: 56px;
-    border-bottom: (2 * $table-border-width) solid $table-border-color;
+    border-bottom: ($table-border-width) solid $table-border-color;
   }
 
   tbody th,
@@ -28,7 +28,7 @@
   }
 
   tbody + tbody {
-    border-top: (2 * $table-border-width) solid $table-border-color;
+    border-top: ($table-border-width) solid $table-border-color;
   }
 
   .table {
@@ -64,7 +64,7 @@
   thead {
     th,
     td {
-      border-bottom-width: (2 * $table-border-width);
+      border-bottom-width: ($table-border-width);
     }
   }
 }

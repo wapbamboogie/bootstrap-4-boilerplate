@@ -193,7 +193,8 @@
 							padding-right: 0;
 						}
 						@include media-breakpoint-down(lg) {
-							padding-right: 35px;
+							padding-right: 25px;
+							letter-spacing: 0.5px;
 						}
 					}
 				}

@@ -45,13 +45,13 @@ gulp.task('compileSass', function() {
 });
 
 gulp.task ('font-css', function() {
-	return gulp.src('assets/css/6-fonts/**') //Gather up all the 'stylesheet.css' files
-	.pipe(gulp.dest('dist/assets/css/fonts')); // Put them in the assets/styles/components folder
+	return gulp.src('assets/css/6-fonts/**')
+	.pipe(gulp.dest('dist/assets/css/fonts'));
 });
 
 gulp.task ('owl-css', function() {
-	return gulp.src('assets/css/7-owl/**') //Gather up all the 'stylesheet.css' files
-	.pipe(gulp.dest('dist/assets/css/owl/')); // Put them in the assets/styles/components folder
+	return gulp.src('assets/css/owl.carousel.min.css')
+	.pipe(gulp.dest('dist/assets/css/owl/'));
 });
 
 gulp.task("minifyCss", ["compileSass"], function() {

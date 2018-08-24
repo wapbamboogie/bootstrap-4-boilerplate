@@ -30,16 +30,23 @@
         background-color: $dark-grey;
         .text-wrapper {
             color: $white;
+            margin-top: 0;
+            padding-top: 77px;
+            padding-bottom: 70px;
+            @include media-breakpoint-down(md) {
+                padding-top: 2rem;
+            }
             h2 {
-                margin-top: 35px;
+                margin-top: 20px;
             }
             h4 {
-                margin-top: 35px;
+                margin-top: 0;
                 margin-bottom: 10px;
                 font-family: PxGrotesk;
                 font-size: 13px;
                 font-weight: bold;
                 letter-spacing: 1px;
+                text-transform: uppercase;
             }
             p {
                 font-size: 15px;

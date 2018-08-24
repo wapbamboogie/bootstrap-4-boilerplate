@@ -29,7 +29,8 @@ h4 {
 }
 
 .table {
-    min-width: 1120px; 
+    min-width: 1120px;
+    border-bottom: ($table-border-width) solid $table-border-color;
 }
 
 .mobile-only {
@@ -45,7 +46,7 @@ h4 {
 }
 
 .logo-wrapper {
-    padding: 42px 0;
+    //padding: 42px 0;
     img {
         height: 30px;
         width: auto;
@@ -77,6 +78,7 @@ h4 {
         margin: auto;
         img.rounded-circle {
             width: 100px;
+            margin: auto;
         }
         h4 {
             font-size: 14px;
@@ -86,6 +88,10 @@ h4 {
 
 th.orange {
     color: $orange;
+}
+
+.container.heading {
+    padding-top: 5rem;
 }
 
 #what-we-do {
@@ -111,6 +117,7 @@ th.orange {
     }
     @include media-breakpoint-down(md) {
         background-image: url('');
+        padding-top: 3rem !important;
             .media-body {
                 padding-top: 32px;
                 padding-bottom: 32px;
@@ -119,6 +126,15 @@ th.orange {
         }
     }
 }
+
+#compare-the-benefits {
+    padding-top: 5rem;
+    @include media-breakpoint-down(md) {
+        padding-top: 3rem;
+    }
+}
+
+
 #our-services {
     line-height: 21px;
     margin-bottom: 100px;
@@ -142,6 +158,19 @@ th.orange {
 #the-team {
     background-color: $orange;
     color: $white;
+    padding-top: 5rem;
+    @include media-breakpoint-down(md) {
+        padding-top: 3rem;
+    }
+    h2 {
+        padding-top: 1rem;
+    }
+}
+
+#case-studies {
+    @include media-breakpoint-down(md) {
+        padding-top: 2rem;
+    }
 }
 
 #say-hello {
