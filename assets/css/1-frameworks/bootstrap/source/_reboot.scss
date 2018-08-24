@@ -57,10 +57,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0; // 1
   font-family: $font-family-base;
-  font-size: $font-size-base;
+  font-size: $font-size-base * 0.875;
   font-weight: $font-weight-base;
   line-height: $line-height-base;
   color: $body-color;
+  letter-spacing: 1px;
   text-align: left; // 3
   background-color: $body-bg; // 2
 }
@@ -272,10 +273,8 @@ img {
   border-style: none; // Remove the border on images inside links in IE 10-.
 }
 
-svg {
-  // Workaround for the SVG overflow bug in IE10/11 is still required.
-  // See https://github.com/twbs/bootstrap/issues/26878
-  overflow: hidden;
+svg:not(:root) {
+  overflow: hidden; // Hide the overflow in IE
   vertical-align: middle;
 }
 

@@ -1,0 +1,16 @@
+footer {
+    color: $white;
+    background-color: $orange;
+    .text-wrapper {
+        padding-top: 100px;
+        padding-bottom: 124px;
+    }
+    a {
+        text-decoration: none;
+        color: $white;
+        &:hover {
+            text-decoration: none;
+            color: $black;
+        }
+    }
+}
