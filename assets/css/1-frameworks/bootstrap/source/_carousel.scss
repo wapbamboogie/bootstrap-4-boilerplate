@@ -50,6 +50,9 @@
         }
         .image-holder {
             padding: 70px 0;
+            @include media-breakpoint-down(md) {
+                padding-top: 1rem;
+            }
         }
     }
 }

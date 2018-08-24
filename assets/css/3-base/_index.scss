@@ -193,6 +193,10 @@ th.orange {
     }
     .clients-container {
         padding-left: 50px;
+        @include media-breakpoint-down(md) {
+            padding-left: $grid-gutter-width / 2; 
+        }
+
         .client {
             padding-bottom: 75px;
         }
@@ -206,6 +210,13 @@ th.orange {
 }
 
 @include media-breakpoint-down(md) {
+
+    .col,
+    [class*="col-"] {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
