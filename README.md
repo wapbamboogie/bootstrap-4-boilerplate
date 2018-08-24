@@ -7,28 +7,36 @@ A [Bootstrap](https://getbootstrap.com/) v4.1.2 boiler plate with [Sass](http://
 ![browsersync logo](https://user-images.githubusercontent.com/10498583/31125540-e2a6eed0-a848-11e7-817a-69c5619f772a.jpg)
 
 ## Quick Start
-```
 # 1 Clone this repo
+```
 git clone https://github.com/wapbamboogie/bootstrap-4-boilerplate.git
+```
 
 # 2 Navigate into the repo directory
+```
 cd bootstrap-4-boilerplate
+```
 
 # 3 Install all node packages
+```
 npm install
+```
 
 # 4 Get started
-gulp serve - starts localhost server with browser-sync, watches HTML, Sass, JS with hot reloading
+```
 gulp - minify CSS/JS and builds your app into the dist directory, ready for production
+gulp serve - starts localhost server with browser-sync, watches HTML, Sass, JS with hot reloading
 ```
 
 ## Requirements
 This project requires you have [nodejs](https://nodejs.org/en/) with [npm](https://www.npmjs.com/get-npm) installed.
 This project requires you have a global installation of [gulp](http://gulpjs.com/).
-```
+
 # Install gulp globally
+```
 npm install -g gulp
 ```
+
 
 ## Gulp commands
 **gulp serve**
