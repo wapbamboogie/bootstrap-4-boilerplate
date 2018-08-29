@@ -455,7 +455,7 @@
                 <div class="row">
                     <div class="form col-12 col-lg-5 offset-lg-1">
                         <h2>Say hello</h2>
-                            <form type="post">
+                            <form method="post">
                             <div class="form-group">
                                 <label for="fname">First name*</label>
                                 <input type="text" class="form-control" name="fname" id="fname" placeholder="" required>
@@ -482,6 +482,43 @@
                                 
                             <button type="submit" class="btn btn-primary">SUBMIT</button>
                         </form>
+						<!--
+
+                            
+                            <?php 
+                            if (!empty($_POST['email'])) {
+                                $to = 'george.georgiev@droxic.com';
+                                $subject = 'D.one contact form has been submitted';
+                                $fname = filter_input(INPUT_POST, 'fname');
+                                $lname = filter_input(INPUT_POST, 'lname');
+                                $email = filter_input(INPUT_POST, 'email');
+                                $msg = filter_input(INPUT_POST, 'textarea');
+                                
+                                $message = "
+                                <html>
+                                    <head>
+                                        <title>$fname $lname has contacted you.</title>
+                                    </head>
+                                    <body>
+                                        <p>First name: $fname</p>
+                                        <p>Last name: $lname</p>
+                                        <p>Email: $email</p>
+                                        <p>Message: $msg</p>
+                                    </body>
+                                    </html>
+                                    ";
+                                    
+                                    // To send HTML mail, the Content-type header must be set
+                                    $headers[] = 'MIME-Version: 1.0';
+                                    $headers[] = 'Content-type: text/html; charset=ISO-8859-1\r\n';
+                                    
+                                    // Mail George
+                                    mail($to, $subject, $message, implode("\r\n", $headers));
+                                }
+                                ?>
+                                
+                            -->
+                                
                     </div>
                     <div class="image-wrapper pl-0 pr-0 col-12 mobile-only">
                         <img src="/assets/img/iphone@3x.jpg" alt="">
