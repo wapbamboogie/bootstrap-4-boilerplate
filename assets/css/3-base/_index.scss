@@ -31,6 +31,9 @@ h4 {
 .table {
     min-width: 1120px;
     border-bottom: ($table-border-width) solid $table-border-color;
+    thead th:not(:first-child) {
+        width: calc((1120px - 220px) / 3);
+    }
 }
 
 .mobile-only {
@@ -132,6 +135,9 @@ th.orange {
     @include media-breakpoint-down(md) {
         padding-top: 3rem;
     }
+    h2 {
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -164,12 +170,6 @@ th.orange {
     }
     h2 {
         padding-top: 1rem;
-    }
-}
-
-#case-studies {
-    @include media-breakpoint-down(md) {
-        padding-top: 2rem;
     }
 }
 
@@ -228,16 +228,25 @@ th.orange {
 
         .client {
             padding-bottom: 75px;
+            opacity: 0.5;
         }
     }
 }
 
-.carousel-item {
-    a {
-        color: $white
+#carousel {
+    .carousel-inner {
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .carousel-item {
+        a {
+            color: $white
+        }
     }
 }
-
+    
 @include media-breakpoint-down(md) {
 
     .col,

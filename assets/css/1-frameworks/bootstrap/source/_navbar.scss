@@ -62,7 +62,7 @@
 
 .navbar-brand {
 	display: inline-block;
-	padding-top: $navbar-brand-padding-y;
+	padding-top: 0;
 	padding-bottom: $navbar-brand-padding-y;
 	margin-right: $navbar-padding-x;
 	font-size: $navbar-brand-font-size;
@@ -93,7 +93,7 @@
 			padding-right: 0;
 		}
 	}
-
+	
 	.dropdown-menu {
 		position: static;
 		float: none;
@@ -187,7 +187,7 @@
 					}
 
 					.nav-item {
-						padding-right: 50px;
+						padding-right: 35px;
 						padding-left: 0;
 						&:last-child {
 							padding-right: 0;
