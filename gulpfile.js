@@ -68,7 +68,7 @@ gulp.task('watchFiles', function() {
 })
 
 gulp.task('clean', function() {
-  del(['dist', 'assets/css/main.css*', 'assets/js/main*.js*']);
+  del(['dist', 'assets/css/main.min.css*', 'assets/js/main*.js*']);
 });
 
 gulp.task('renameSources', function() {
