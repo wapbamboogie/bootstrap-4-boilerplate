@@ -13,8 +13,8 @@
 // Color system
 //
 
-// $white:    #fff !default;
-// $gray-100: #f8f9fa !default;
+$white:    #fff !default;
+$gray-100: #f9f9f9 !default;
 // $gray-200: #e9ecef !default;
 // $gray-300: #dee2e6 !default;
 // $gray-400: #ced4da !default;
@@ -23,7 +23,7 @@
 // $gray-700: #495057 !default;
 // $gray-800: #343a40 !default;
 // $gray-900: #212529 !default;
-// $black:    #000 !default;
+$black:    #000 !default;
 //
 // $grays: () !default;
 // // stylelint-disable-next-line scss/dollar-variable-default
@@ -48,7 +48,14 @@
 // $purple:  #6f42c1 !default;
 // $pink:    #e83e8c !default;
 // $red:     #dc3545 !default;
-// $orange:  #fd7e14 !default;
+$orange: #f36b11 !default;
+$dusty-orange: #e6643b !default;
+$grey: #979797 !default;
+$jumbotron-grey: #e4e4e4 !default;
+$light-grey: #d9d9d9 !default;
+$lighter-grey: #f9f9f9 !default;
+$warm-grey: #9b9b9b !default;
+$dark-grey: #5e5e5e !default;
 // $yellow:  #ffc107 !default;
 // $green:   #28a745 !default;
 // $teal:    #20c997 !default;
@@ -75,13 +82,14 @@
 //   $colors
 // );
 //
-// $primary:       $blue !default;
-// $secondary:     $gray-600 !default;
+$primary:       $orange !default;
+$secondary:     $grey !default;
+
 // $success:       $green !default;
 // $info:          $cyan !default;
 // $warning:       $yellow !default;
 // $danger:        $red !default;
-// $light:         $gray-100 !default;
+$light:         $lighter-grey !default;
 // $dark:          $gray-800 !default;
 //
 // $theme-colors: () !default;
@@ -217,8 +225,8 @@
 // //
 // // Set the number of columns and specify the width of the gutters.
 //
-// $grid-columns:                12 !default;
-// $grid-gutter-width:           30px !default;
+$grid-columns:                12 !default;
+$grid-gutter-width:           20px !default;
 //
 // // Components
 // //
@@ -230,7 +238,7 @@
 // $border-width:                1px !default;
 // $border-color:                $gray-300 !default;
 //
-// $border-radius:               .25rem !default;
+$border-radius:               0rem !default;
 // $border-radius-lg:            .3rem !default;
 // $border-radius-sm:            .2rem !default;
 //
@@ -251,33 +259,78 @@
 // // Fonts
 // //
 // // Font, line-height, and color for body text, headings, and more.
+
+@font-face {
+    font-family: "PxGrotesk";
+    src: url("/assets/css/fonts/PxGrotesk/Px Grotesk Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: "PxGrotesk";
+    src: url("/assets/css/fonts/PxGrotesk/Px Grotesk Regular Italic.ttf") format('truetype');
+    font-style: italic;
+}
+@font-face {
+    font-family: "PxGrotesk-Bold";
+    src: url("/assets/css/fonts/PxGrotesk/Px Grotesk Bold.ttf") format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: "PxGrotesk-Bold";
+    src: url("/assets/css/fonts/PxGrotesk/Px Grotesk Bold Italic.ttf") format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PxGrotesk";
+    src: url("/assets/css/fonts/PxGrotesk/Px Grotesk Light.ttf") format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "PxGrotesk";
+    src: url("/assets/css/fonts/PxGrotesk/Px Grotesk Light Italic.ttf") format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "TiemposHeadline";
+    src: url("/assets/css/fonts/TiemposHeadline-Light.otf") format('opentype');
+}
+@font-face {
+    font-family: "TiemposHeadline";
+    src: url("/assets/css/fonts/TiemposHeadline-LightItalic.otf") format('opentype');
+    font-style: italic;
+}
+
+
 //
 // // stylelint-disable value-keyword-case
-// $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      PxGrotesk, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 // $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // $font-family-base:            $font-family-sans-serif !default;
 // // stylelint-enable value-keyword-case
 //
-// $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:                 1rem !default; // Assumes the browser default, typically `16px`
 // $font-size-lg:                ($font-size-base * 1.25) !default;
 // $font-size-sm:                ($font-size-base * .875) !default;
 //
-// $font-weight-light:           300 !default;
-// $font-weight-normal:          400 !default;
+$font-weight-light:           200 !default;
+$font-weight-normal:          300 !default;
 // $font-weight-bold:            700 !default;
 //
 // $font-weight-base:            $font-weight-normal !default;
 // $line-height-base:            1.5 !default;
 //
-// $h1-font-size:                $font-size-base * 2.5 !default;
-// $h2-font-size:                $font-size-base * 2 !default;
-// $h3-font-size:                $font-size-base * 1.75 !default;
-// $h4-font-size:                $font-size-base * 1.5 !default;
-// $h5-font-size:                $font-size-base * 1.25 !default;
-// $h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 2.95 !default;
+$h2-font-size:                $font-size-base * 2.7 !default;
+$h3-font-size:                $font-size-base * 2.1 !default;
+$h4-font-size:                $font-size-base * 1.8 !default;
+$h5-font-size:                $font-size-base * 1.5 !default;
+$h6-font-size:                $font-size-base * 1.25 !default;
 //
 // $headings-margin-bottom:      ($spacer / 2) !default;
-// $headings-font-family:        inherit !default;
+$headings-font-family:        TiemposHeadline !default;
 // $headings-font-weight:        500 !default;
 // $headings-line-height:        1.2 !default;
 // $headings-color:              inherit !default;
@@ -333,7 +386,7 @@
 // $table-active-bg:             $table-hover-bg !default;
 //
 // $table-border-width:          $border-width !default;
-// $table-border-color:          $gray-300 !default;
+$table-border-color:          $grey !default;
 //
 // $table-head-bg:               $gray-200 !default;
 // $table-head-color:            $gray-700 !default;
@@ -428,11 +481,11 @@
 // $input-disabled-bg:                     $gray-200 !default;
 //
 // $input-color:                           $gray-700 !default;
-// $input-border-color:                    $gray-400 !default;
+$input-border-color:                    $grey !default;
 // $input-border-width:                    $input-btn-border-width !default;
 // $input-box-shadow:                      inset 0 1px 1px rgba($black, .075) !default;
 //
-// $input-border-radius:                   $border-radius !default;
+$input-border-radius:                   $border-radius !default;
 // $input-border-radius-lg:                $border-radius-lg !default;
 // $input-border-radius-sm:                $border-radius-sm !default;
 //
@@ -479,15 +532,15 @@
 // $custom-control-spacer-x:               1rem !default;
 //
 // $custom-control-indicator-size:         1rem !default;
-// $custom-control-indicator-bg:           $gray-300 !default;
+$custom-control-indicator-bg:           $white !default;
 // $custom-control-indicator-bg-size:      50% 50% !default;
-// $custom-control-indicator-box-shadow:   inset 0 .25rem .25rem rgba($black, .1) !default;
+$custom-control-indicator-box-shadow:   inset 0 .15rem .15rem rgba($black, .1) !default;
 //
 // $custom-control-indicator-disabled-bg:          $gray-200 !default;
 // $custom-control-label-disabled-color:           $gray-600 !default;
 //
-// $custom-control-indicator-checked-color:        $component-active-color !default;
-// $custom-control-indicator-checked-bg:           $component-active-bg !default;
+$custom-control-indicator-checked-color:        $black !default;
+$custom-control-indicator-checked-bg:           $white !default;
 // $custom-control-indicator-checked-disabled-bg:  rgba(theme-color("primary"), .5) !default;
 // $custom-control-indicator-checked-box-shadow:   none !default;
 //
@@ -498,7 +551,7 @@
 // $custom-control-indicator-active-box-shadow:    none !default;
 //
 // $custom-checkbox-indicator-border-radius:       $border-radius !default;
-// $custom-checkbox-indicator-icon-checked:        str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{$custom-control-indicator-checked-color}' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"), "#", "%23") !default;
+$custom-checkbox-indicator-icon-checked:        url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23000' d='M 0,9 8,18 19,0' style='stroke:#000;stroke-width:3;fill:none;' /%3E%3C/svg%3E") !default;
 //
 // $custom-checkbox-indicator-indeterminate-bg:          $component-active-bg !default;
 // $custom-checkbox-indicator-indeterminate-color:       $custom-control-indicator-checked-color !default;
@@ -542,15 +595,14 @@
 // $custom-range-track-border-radius:  1rem !default;
 // $custom-range-track-box-shadow:     inset 0 .25rem .25rem rgba($black, .1) !default;
 //
-// $custom-range-thumb-width:                   1rem !default;
-// $custom-range-thumb-height:                  $custom-range-thumb-width !default;
-// $custom-range-thumb-bg:                      $component-active-bg !default;
-// $custom-range-thumb-border:                  0 !default;
-// $custom-range-thumb-border-radius:           1rem !default;
-// $custom-range-thumb-box-shadow:              0 .1rem .25rem rgba($black, .1) !default;
-// $custom-range-thumb-focus-box-shadow:        0 0 0 1px $body-bg, $input-btn-focus-box-shadow !default;
-// $custom-range-thumb-focus-box-shadow-width:  $input-btn-focus-width !default; // For focus box shadow issue in IE/Edge
-// $custom-range-thumb-active-bg:               lighten($component-active-bg, 35%) !default;
+// $custom-range-thumb-width:            1rem !default;
+// $custom-range-thumb-height:           $custom-range-thumb-width !default;
+// $custom-range-thumb-bg:               $component-active-bg !default;
+// $custom-range-thumb-border:           0 !default;
+// $custom-range-thumb-border-radius:    1rem !default;
+// $custom-range-thumb-box-shadow:       0 .1rem .25rem rgba($black, .1) !default;
+// $custom-range-thumb-focus-box-shadow: 0 0 0 1px $body-bg, $input-btn-focus-box-shadow !default;
+// $custom-range-thumb-active-bg:        lighten($component-active-bg, 35%) !default;
 //
 // $custom-file-height:                $input-height !default;
 // $custom-file-height-inner:          $input-height-inner !default;
@@ -627,7 +679,7 @@
 //
 // $nav-link-padding-y:                .5rem !default;
 // $nav-link-padding-x:                1rem !default;
-// $nav-link-disabled-color:           $gray-600 !default;
+$nav-link-disabled-color:           $warm-grey !default;
 //
 // $nav-tabs-border-color:             $gray-300 !default;
 // $nav-tabs-border-width:             $border-width !default;
@@ -669,10 +721,10 @@
 // $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
 // $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 //
-// $navbar-light-color:                rgba($black, .5) !default;
-// $navbar-light-hover-color:          rgba($black, .7) !default;
-// $navbar-light-active-color:         rgba($black, .9) !default;
-// $navbar-light-disabled-color:       rgba($black, .3) !default;
+$navbar-light-color:                $black !default;
+$navbar-light-hover-color:          $dusty-orange !default;
+$navbar-light-active-color:         $warm-grey !default;
+$navbar-light-disabled-color:       $warm-grey !default;
 // $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
 // $navbar-light-toggler-border-color: rgba($black, .1) !default;
 //
@@ -710,7 +762,7 @@
 // // Jumbotron
 //
 // $jumbotron-padding:                 2rem !default;
-// $jumbotron-bg:                      $gray-200 !default;
+$jumbotron-bg:                      $jumbotron-grey !default;
 //
 //
 // // Cards
@@ -910,22 +962,23 @@
 //
 // // Carousel
 //
-// $carousel-control-color:            $white !default;
-// $carousel-control-width:            15% !default;
-// $carousel-control-opacity:          .5 !default;
+$carousel-control-color:            $white !default;
+$carousel-control-width:            auto !default;
+$carousel-control-opacity:          1 !default;
 //
-// $carousel-indicator-width:          30px !default;
-// $carousel-indicator-height:         3px !default;
-// $carousel-indicator-spacer:         3px !default;
-// $carousel-indicator-active-bg:      $white !default;
+$carousel-indicator-width:          17px !default;
+$carousel-indicator-height:         17px !default;
+$carousel-indicator-spacer:         9px !default;
+$carousel-indicator-active-bg:      $warm-grey !default;
 //
 // $carousel-caption-width:            70% !default;
 // $carousel-caption-color:            $white !default;
 //
-// $carousel-control-icon-width:       20px !default;
+$carousel-control-icon-width:       31px !default;
+$carousel-control-icon-height:       59px !default;
 //
-// $carousel-control-prev-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"), "#", "%23") !default;
-// $carousel-control-next-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"), "#", "%23") !default;
+$carousel-control-prev-icon-bg:     url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="31" height="59" viewBox="0 0 31 59"><path fill="%23FFF" fill-rule="evenodd" d="M0 29.5L28.298 59 31 56.527 5.047 29.5 31 2.473 28.298 0z"/></svg>') !default;
+$carousel-control-next-icon-bg:     url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="31" height="59" viewBox="0 0 31 59"><path fill="%23FFF" fill-rule="evenodd" d="M0 2.473L25.953 29.5 0 56.527 2.703 59 31 29.5 2.703 0z"/></svg>') !default;
 //
 // $carousel-transition:               transform .6s ease !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
 //

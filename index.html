@@ -1,68 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="This is a boilerplate for a Bootstrap 4.1.1 project">
-    <meta name="keywords" content="HTML, CSS, JS, Sass, JavaScript, framework, bootstrap, front-end, frontend, web development">
-    <meta name="author" content="Henrik H. Boelsmand">
-    <title>Bootstrap 4 boilerplate</title>
-    <link rel="shortcut icon" href="favicon.ico">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="We are digital development specialists Designed for companies that have an ongoing digital development requirement but are tired of excessive agency bills.">
+  <base href="/">
+  <title>D.one</title>
+  <link rel="shortcut icon" href="/favicon.ico">
 
-    <!-- build:css -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- endbuild -->
-  </head>
+  <!-- build:css -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <link rel="stylesheet" href="/assets/css/owl/owl.carousel.min.css">
 
-  <body>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-           <a class="navbar-brand" href=".">Navbar</a>
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-           </button>
+  <!-- endbuild -->
+</head>
 
-           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-             <ul class="navbar-nav mr-auto">
-               <li class="nav-item active">
-                 <a class="nav-link" href=".">Home <span class="sr-only">(current)</span></a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="#">Link</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link disabled" href="#">Disabled</a>
-               </li>
-               <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                   <a class="dropdown-item" href="#">Action</a>
-                   <a class="dropdown-item" href="#">Another action</a>
-                   <a class="dropdown-item" href="#">Something else here</a>
-                 </div>
-               </li>
-             </ul>
-             <form class="form-inline my-2 my-lg-0">
-               <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-             </form>
-           </div>
+<body>
+  <header>
+    <nav id="scrollspy" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        
+        <div class="container mt-auto mb-auto">
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" class="logo" alt=""></a>
+            <div class="collapse navbar-collapse ml-auto">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#what-we-do">WHAT WE DO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#compare-the-benefits">COMPARE THE BENEFITS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-services">OUR SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#case-studies">CASE STUDIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#the-team">THE TEAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#say-hello">SAY HELLO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="row">
+            <div class="mobile-only mobile-menu collapse" id="mobile-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item" data-toggle="collapse" data-target="#mobile-menu">
+                        <a class="nav-link active" href="#what-we-do">WHAT WE DO</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target="#mobile-menu">
+                        <a class="nav-link" href="#compare-the-benefits">COMPARE THE BENEFITS</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target="#mobile-menu">
+                        <a class="nav-link" href="#our-services">OUR SERVICES</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target="#mobile-menu">
+                        <a class="nav-link" href="#case-studies">CASE STUDIES</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target="#mobile-menu">
+                        <a class="nav-link" href="#the-team">THE TEAM</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target="#mobile-menu">
+                        <a class="nav-link" href="#say-hello">SAY HELLO</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target="#mobile-menu">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+    </header>
+  
 
-         <div class="container">
+    
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="media col-lg-11">
+                        <div class="row">
+                            <div class="container heading">
+                                <div class="row">
+                                <div class="headding-wrapper col-12 col-lg-6">
+                                    <h1>Digital development specialists</h1>
+                                </div>
+                                <div class="media-body col-12 col-lg-6 mt-auto mb-auto">
+                                    <p>We’re innovative digital development specialists offing a cost-effective blend of on and offshore services.
+                                        Focused on the best quality at the best price, we take on your development challenges to get the job D.ONE.
+                                        We’re a cost effective stress-free alternative to building your own team.
+                                        Designed for companies that have an ongoing digital development requirement but are tired of excessive agency bills.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
 
-           <div style="padding-top:120px; text-align:center;">
-                <h1>Hello world!</h1>
-                <p class="lead">Remove this content or build upon it.<br>
-                For documentation and examples: <a href="http://getbootstrap.com/" target="_blank">getbootstrap.com</a><br>
-                Here is a <a href="newpage.html">link to another page</a></p>
-           </div>
+        <div class="container marketing">
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="rounded-circle" src="assets/img/group-10@3x.png" alt="Generic placeholder image" >
+                        <h4>COST EFFECTIVE</h4>
+                        <p>Cheaper than freelancers or building your own team. No recruitment fees</p>
+                    </div>
+                            
+                    <div class="item">
+                        <img class="rounded-circle" src="assets/img/group-114@3x.png" alt="Generic placeholder image" >
+                        <h4>FLEXIBLE</h4>
+                        <p>Development resource available as and when you need it to suit whatever project.</p>
+                    </div>
+                    
+                    <div class="item">
+                        <img class="rounded-circle" src="assets/img/group-14@3x.png" alt="Generic placeholder image" >
+                        <h4>TIME SAVING</h4>
+                        <p>A ready made full-formed team who work briliantly togeather with a streamlined work flow. </p>
+                    </div>
 
-         </div>
+                    <div class="item">
+                        <img class="rounded-circle" src="assets/img/group-16@3x.png" alt="Generic placeholder image" >
+                        <h4>HASSLE FREE</h4>
+                        <p>Aviod the hassle of recruitment, people management and HR.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- build:js -->
-    <script src="assets/js/main.js"></script>
-     <!-- endbuild -->
-  </body>
+        <div class="jumbotron pt-lg-0 pb-0 mb-0" id="what-we-do">
+            <div class="container">
+                <div class="row">
+                    <div class="media-body col-12 col-lg-6 mb-auto mt-auto">
+                        <h2 class="mt-0">Taking a fresh approach</h2>
+                        <p>All organisations have an ever-increasing requirement for digital development. Whilst most currently fulfil this through outsourcing to digital agencies, many are starting to consider building internal teams. Our blend of on and offshore services enables us to provide a more cost-effective solution without sacrificing on experience or expertise.</p>
+                        <p>Our team of Account and Project Managers based in London will work with you to make sure you’re totally satisfied on a day to day basis. Meanwhile, our team of highly skilled and experienced developers based in Sofia deliver the very best practice and quality assurance.</p>
+                    </div>
+                    <div class="image-wrapper col-12 pl-0 pr-0 mobile-only">
+                        <img src="/assets/img/Done_dev_image.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="jumbotron" id="compare-the-benefits">
+            <div class="container">
+                <div>
+                    <h2>Compare the benefits</h2>
+                </div>
+                <div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">INHOUSE DEVELOPMENT TEAM</th>
+                                    <th scope="col">FREELANCER DEVELOPERS</th>
+                                    <th scope="col" class="orange">D.ONE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">COST</th>
+                                    <td>Can be cost effective if there is always lots of work but lots of money can be wasted if there is not enough work.</td>
+                                    <td>Freelancers offer felxiblity but usually charge large sums for their services </td>
+                                    <td>Much cheaper than using freelancers and if you don’t have a permenant requirement for developer work it will most likely be more cost effective than building an in house team. </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">FLEXIBILITY</th>
+                                    <td>Buliding your own in house team offers very little flexiblity. </td>
+                                    <td>Although they are very flexible, when a freelancer comes in it can somtimes take up valauble time and resource just for them to even get an understanding of the project they are working on. Developeres often have different ways of working and this can sometimes course problems when projects are passed between freelancers</td>
+                                    <td>Add and remove development resource as and when you need it.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">PEOPLE MANAGEMENT & RECRUITMENT</th>
+                                    <td>Buliding your own in house team means a considerable amount of people management.  Things you may not even think about can take up large amounts of your time including organising holiday time and christmas partys.</td>
+                                    <td>If you recruit freelancers yourself this can be very time consuming. If you go through a recruitment agency this can be very expensive. </td>
+                                    <td>All people management is taken care of and n recruitment nessecary. </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" id="our-services">
+            <div class="row">
+                <h2 class="col-12">Getting the job D.ONE</h2>
+                
+                <div class="col-lg-4">
+                    <img src="assets/img/group-2@3x.png" height="110px" alt="Generic placeholder image" >
+                    <h4>DEVELOPMENT</h4>
+                    <p class="pr-lg-5">Design and UX / Frontend: HTML / CSS 3 / Javascript / jQuery / Angular.js / Backbone.js / React.js / Kockout.js / SASS/LESS 
+                    <br />PHP: Drupal / Magento / Symfony / WordPress / Custom PHP
+                    <br /> .NET: Site Core</p>
+                </div>
+                <div class="col-lg-3">
+                    <img src="assets/img/group@3x.png" height="110px" alt="Generic placeholder image" >
+                    <h4>MOBILE APPLICATIONS</h4>
+                    <p class="pr-lg-5">Design and UX / iOS / Android / Windows Mobile / Adobe Phonegap / Unity 3D / Cocos2d-x</p>
+                    
+                </div>
+                <div class="text-wrapper col-lg-5">
+                    <p>We become part of your team and support you to set up an internal process for requirements capture and specification, taking as much or as little of this off your hands as you’d like.</p>
+                    <p>Then we take total responsibility for technical delivery of your web projects, providing you with know-how and delivering scalability, using the best technologies and platforms.</p>
+                    <p>Our services include: frontend to backend development; prototyping to delivery; testing and quality assurance.</p>
+                </div>
+                
+            </div>
+        </div>
+                
+        <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+                <li data-target="#carousel" data-slide-to="5"></li>
+                <li data-target="#carousel" data-slide-to="6"></li>
+                <li data-target="#carousel" data-slide-to="7"></li>
+                <li data-target="#carousel" data-slide-to="8"></li>
+            </ol>
+            <div class="carousel-inner" id="case-studies">
+                <div class="carousel-item active laptop">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>KENNEDYS</h2>
+                                <p>Our Developers and Project Managers have years of experience translating functional business requirements into user-centred digital websites and applications. We bring our passion for digital innovation to your projects along with the capabilities and drive to deliver. All at the best possible cost.</p>
+                                <a href="https://www.kennedyslaw.com/" target="_blank">https://www.kennedyslaw.com/</a>
+                            
+                            </div>
+                            
+                            <div class="image-holder col-lg-6">
+                                <img srcset="assets/img/kennedys-1280-x-720.jpg 320w,
+                                assets/img/kennedys-1280-x-720@2x.jpg 640w,
+                                assets/img/kennedys-1280-x-720@3x.jpg 1200w"
+                                sizes="(max-width: 320px) 280px,
+                                (max-width: 640px) 600px,
+                                1200px"
+                                src="assets/img/kennedys-1280-x-720@3x.jpg" alt="Kennedys">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item laptop">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>Take IELTS</h2>
+                                <p>We rebuilt their website, taking them from Drupal 6 to Drupal 8, refreshing the layout and design of the site and focusing on how it was displayed on mobile.</p>
+                                <p>Technology – Drupal 8 CMS</p>
+                                <a href="https://takeielts.britishcouncil.org" target="_blank">https://takeielts.britishcouncil.org</a>
+                            </div>
+                            
+                            <div class="image-holder col-lg-6">
+                                <img src="/assets/img/kennedys-ielts-1280-x-720@3x.jpg" alt="Kennedys">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item laptop">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>Central School of Speech and Drama</h2>
+                                <p>We delivered enhancements to their website based on UX recommendations provided by City Interaction Lab providing an immediate visual impact.</p>
+                                <p>Technology – Drupal 7 CMS</p>
+                                <a href="https://www.cssd.ac.uk" target="_blank">https://www.cssd.ac.uk</a>
+                            </div>
+                            
+                            <div class="image-holder col-lg-6">
+                                <img src="/assets/img/kennedys-cssd-1280-x-720@3x.jpg" alt="Kennedys">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item laptop">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>Sheffield Hallam University</h2>
+                                <p>Info missing</p>
+                                <p>Technology – Sitecore</p>
+                                <a href="https://www.shu.ac.uk" target="_blank">https://www.shu.ac.uk</a>
+                            </div>
+                            
+                            <div class="image-holder col-lg-6">
+                                <img src="/assets/img/kennedys-shu-1280-x-720@3x.jpg" alt="Kennedys">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item laptop">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>The Varkey Foundation </h2>
+                                <p>The organisation wanted to consolidate their brands and unify the user experience.  We provided them with a digital platform that fulfils the needs of the Varkey Foundation, the Global Teacher Prize and the Global Education and Skills Forum. </p>
+                                <p>Technology – Umbraco</p>
+                                <a href="https://www.varkeyfoundation.org" target="_blank">https://www.varkeyfoundation.org</a>
+                            </div>
+                            
+                            <div class="image-holder col-lg-6">
+                                <img src="/assets/img/kennedys-education-1280-x-720@3x.jpg" alt="Kennedys">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item laptop">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>IOSH</h2>
+                                <p>We designed, developed and delivered and a brand-new website for IOSH.</p>
+                                <p>Technology – Umbraco</p>
+                                <a href="https://www.iosh.ac.uk" target="_blank">https://www.iosh.ac.uk</a>
+                            </div>
+                            
+                            <div class="image-holder col-lg-6">
+                                <img src="assets/img/kennedys-iosh-1280-x-720@3x.jpg" alt="Kennedys">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item laptop">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>Lieferheld</h2>
+                                <p>We provided front-end and back-end development services to Lieferheld. Over the course of our successful partnership, our developers received continual recognition for their dedication and team work.</p>
+                                <p>Technology - HTML5, CSS3, JavaScript, jQuery, Backbone.JS, React.JS, NodeJS, Immutable.JS, ExpressJS, PhoneGap, PostgreSQL, Elastic search, Django, Jenkins</p>
+                                <a href="https://www.lieferheld.ac.uk" target="_blank">https://www.lieferheld.ac.uk</a>
+                            </div>
+                            
+                            <div class="image-holder col-lg-6">
+                                <img src="/assets/img/kennedys-lieferheld-1280-x-720@3x.jpg" alt="Kennedys">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item laptop">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>Gunvor Group</h2>
+                                <p>We have created a unique intranet platform combining the best practices in UI development with easy-to-use tools and means of communication, maximizing users’ experience with the system.</p>
+                                <p>Technology - C#; ASP.NET; Sitecore 8.2 CMS; MVC, GlassMapper, Unicorne</p>
+                                <a href="https://gunvorgroup.com/en/" target="_blank">https://gunvorgroup.com/en/</a>
+                            </div>
+                            
+                            <div class="image-holder col-lg-6">
+                                <img src="/assets/img/kennedys-gunvorgroup-1280-x-720@3x.jpg" alt="Kennedys">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item laptop">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-lg-1 col-lg-4 text-wrapper">
+                                <h4>Case studies</h4>
+                                <h2>WOLFSBURG</h2>
+                                <p>We delivered HTML, CSS and Javascript framework containing all views and functionalities requested by the client including, but not limited to, single pages, overview pages, navigations, newsletter template and other page views and components. In addition, the product provided complied to WAI-ARIA 1.0 and WAI_WACG AAA</p>
+                                <p>Technology - Bootstrap / jQuery / CSS3 / HTML5</p>
+                                <a href="https://www.wolfsburg.de/" target="_blank">https://www.wolfsburg.de/</a>
+                            </div>
+                            
+                            <div class="image-holder col-lg-6">
+                                <img src="/assets/img/kennedys-wolfsburg-1280-x-720@3x.jpg" alt="Kennedys">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>            
+            </div>
+        </div>
+
+        <div id="the-team" class="jumbotron mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-lg-1 col-lg-4">
+                        <h2>The team</h2>
+                        <h4>DEPEND ON US, YOU’RE IN SAFE HANDS</h4>
+                        <p>Our Developers and Project Managers have years of experience translating functional business requirements into user-centred digital websites and applications. We bring our passion for digital innovation to your projects along with the capabilities and drive to deliver. All at the best possible cost.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-lg-1 col-lg-5">
+                        <h4>SOFIA TEAM</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="/assets/img/Done_profile-shots_Val-small.jpg" alt="Val">
+                            </div>
+                            <div class="col-6">
+                                <img src="/assets/img/Done_profile-shots_GeorgeG-small.jpg" alt="George">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <h4>LONDON TEAM</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="/assets/img/Done_profile-shots_David-small.jpg" alt="David">
+                            </div>
+                            <div class="col-6">
+                                <img src="/assets/img/Done_profile-shots_Paul-small.jpg" alt="Paul">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="say-hello" class="jumbotron pt-0 mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="form col-12 col-lg-5 offset-lg-1">
+                        <h2>Say hello</h2>
+                            <form method="post">
+                            <div class="form-group">
+                                <label for="fname">First name*</label>
+                                <input type="text" class="form-control" name="fname" id="fname" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">Last name*</label>
+                                <input type="text" class="form-control" name="lname" id="lname" placeholder="" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="textarea">Message*</label>
+                                <textarea class="form-control" id="textarea" name="textarea" rows="1" style="resize: none;" required></textarea>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" required>
+                                <label class="custom-control-label" for="customCheck1">Yes, I have read the privacy policy and I agree to submit my data.<br /><br />
+                                    My data may be collected, stored and processed by D.one, but not disclosed to third parties. The content and scope of my consent are set out in the D.One Code of Practice. I agree that my e-mail address and personal information from D.One will be used to email me about D.One products and services. I can revoke my consent to the collection, storage and processing of my data as well as my consent to receive the information described to D.One at any time.</label>
+                            </div>
+                                
+                            <button type="submit" class="btn btn-primary">SUBMIT</button>
+                        </form>
+						<!--
+
+                            
+                            <?php 
+                            if (!empty($_POST['email'])) {
+                                $to = 'george.georgiev@droxic.com';
+                                $subject = 'D.one contact form has been submitted';
+                                $fname = filter_input(INPUT_POST, 'fname');
+                                $lname = filter_input(INPUT_POST, 'lname');
+                                $email = filter_input(INPUT_POST, 'email');
+                                $msg = filter_input(INPUT_POST, 'textarea');
+                                
+                                $message = "
+                                <html>
+                                    <head>
+                                        <title>$fname $lname has contacted you.</title>
+                                    </head>
+                                    <body>
+                                        <p>First name: $fname</p>
+                                        <p>Last name: $lname</p>
+                                        <p>Email: $email</p>
+                                        <p>Message: $msg</p>
+                                    </body>
+                                    </html>
+                                    ";
+                                    
+                                    // To send HTML mail, the Content-type header must be set
+                                    $headers[] = 'MIME-Version: 1.0';
+                                    $headers[] = 'Content-type: text/html; charset=ISO-8859-1\r\n';
+                                    
+                                    // Mail George
+                                    mail($to, $subject, $message, implode("\r\n", $headers));
+                                }
+                                ?>
+                                
+                            -->
+                                
+                    </div>
+                    <div class="image-wrapper pl-0 pr-0 col-12 mobile-only">
+                        <img src="/assets/img/iphone@3x.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron pt-0 pb-0 mb-0" id="clients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h4>CLIENTS</h4>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="container clients-container">
+                            <div class="row">
+                                <div class="client col-6">
+                                    <img src="/assets/img/kpmg.png" width="100px" alt="">
+                                </div>
+                                <div class="client col-6">
+                                    <img src="/assets/img/AQ_office_door_sign_black.png" width="114px" alt="">
+                                </div>
+                                <div class="client col-6">
+                                    <img src="/assets/img/offthetopofmyhead-black.png" width="124px" alt="">
+                                </div>
+                                <div class="client col-6">
+                                    <img src="/assets/img/TrilliumLogo.png" width="115px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div id="contact" class="text-wrapper offset-lg-1 col-lg 5">
+                    
+                    <h2>Contact</h2>
+                    <p>The Courtyard Building<br />
+                        11 Curtain Road<br />
+                        London<br />
+                        EC2A 3LT <br />
+                        <a href="tel:+442074268900">44 (0) 20 7426 8900</a>
+                        
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <!-- build:js -->
+  <script src="/assets/js/main.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- endbuild -->
+    <script>
+    jQuery(document).ready(function() {
+        jQuery('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false
+                },
+                748:{
+                    items:2,
+                    nav:false
+                },
+                1000:{
+                    items:4,
+                    nav:false,
+                    loop:false
+                }
+            }
+        })
+    });
+</script>
+</body>
 
 </html>
